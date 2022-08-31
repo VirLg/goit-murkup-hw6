@@ -446,6 +446,41 @@ img {
   margin-right: 30px;
 }
 
+.item-our-work {
+  position: relative;
+}
+.work__bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 23.8%;
+  font-weight: 700;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.work__text {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary-white-color);
+  text-align: 1.14;
+  letter-spacing: 0.03em;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
 /* ============Main Clients============== */
 
 .client-logo {
