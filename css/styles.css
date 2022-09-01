@@ -611,8 +611,13 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.form-lable-item input:active {
+.form-lable-item input[type="text"]:hover {
+  background-color: var(--primary-white-color);
+}
+
+.form-lable input[type="mail"]:hover {
   color: var(--primary-white-color);
+  background-color: red;
 }
 
 .footer-form-link {
@@ -916,9 +921,6 @@ textarea {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
-}
-
-.form-lable input[type="checkbox"] {
 }
 
 .policy-text {
