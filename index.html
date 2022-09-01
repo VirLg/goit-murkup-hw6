@@ -711,20 +711,76 @@
             </li>
           </ul>
         </div>
+        <!-- ==============FOOTER FORM======================== -->
         <div class="footer-form">
           <b class="flex comin-title">Підпишись на розсилку</b>
-          <input type="mail" class="footer-form-item">
-          <a href="" class="link footer-form-link">Підписатися</a></input>
+          <input type="email" class="footer-form-item" placeholder="E-mail" />
+          <a href="" class="flex link footer-form-link">Підписатися</a>
         </div>
       </div>
     </footer>
-
+    <!-- ====================Modal Window======================== -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <a class="modal-btn-bcg" data-modal-close href=""
           ><svg class="modal-button">
             <use href="./images/sprite.svg#icon-Vector"></use></svg
         ></a>
+
+        <div class="modal-form">
+          <h2 class="modal-title">Залиште своЇ данні, ми вам передзвонимо</h2>
+          <div class="form-lable">
+            <label class="form-lable-text" for="name">Ім'я</label>
+            <input class="form-lable-item" type="text" name="name" id="name" />
+          </div>
+          <div class="form-lable">
+            <label class="form-lable-text" for="tel">Телефон</label>
+            <input
+              class="form-lable-item"
+              type="tel"
+              name="tel"
+              id="tel"
+              autocomplete="tel"
+            />
+          </div>
+          <div class="form-lable">
+            <label class="form-lable-text" for="mail">Пошта</label>
+            <input
+              class="form-lable-item"
+              type="email"
+              name="mail"
+              id="mail"
+              autocomplete="email"
+            />
+          </div>
+          <div class="form-lable">
+            <label class="form-lable-text" for="coment">Коментар</label>
+            <textarea
+              class="form-lable-coment"
+              name="coment"
+              id="coment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+              autocomplete="off"
+            ></textarea>
+          </div>
+          <div class="form-lable">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="policy"
+              value=""
+              id="policy"
+            />
+            <label class="policy-text" for="policy"
+              >Погоджуюсь з розсилкою та приймаю
+              <a class="policy-link" href="">Умови договору</a></label
+            >
+          </div>
+
+          <button class="modal-form-btn" type="submit">Відправити</button>
+        </div>
       </div>
     </div>
 
