@@ -599,25 +599,35 @@ img {
   width: 358px;
   height: 50px;
   margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: var(--primary-text-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--primary-footer-color);
   padding: 16px 15px;
-}
-.footer-form-item::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  border-color: var(--);
 }
+.footer-form-item:hover {
+  border: 1px solid var(--accent-text-color);
+}
+.footer-form-item:placeholder-shown {
+  background-color: var(--primary-footer-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-item:not(:placeholder-shown) {
+  background-color: var(--primary-white-color);
+}
+
 .form-lable-item input[type="text"]:hover {
   background-color: var(--primary-white-color);
 }
 
 .form-lable input[type="mail"]:hover {
   color: var(--primary-white-color);
-  background-color: red;
 }
 
 .footer-form-link {
@@ -833,7 +843,7 @@ img {
   height: 581px;
   top: 50%;
   left: 50%;
-
+  padding: 40px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -844,17 +854,15 @@ img {
 }
 
 .modal-btn-bcg {
-  display: flex;
+  position: absolute;
+  right: 8px;
+  top: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
 
-  justify-content: center;
   align-items: center;
-  margin-top: 8px;
-  margin-right: 8px;
-  margin-bottom: 2px;
-  margin-left: auto;
+
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-white-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -877,11 +885,10 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+
   width: 448px;
 }
 .modal-title {
-  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.6;
@@ -889,29 +896,77 @@ textarea {
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+
+  margin-bottom: 30px;
 }
-.form-lable {
-  margin-bottom: 10px;
+.modal-icon-svg {
+  position: absolute;
+
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+}
+.form-lable:focus .modal-icon-svg,
+.form-lable:hover .modal-icon-svg {
+  fill: var(--accent-text-color);
+}
+.form-lable-item:hover + .form-lable-text,
+.form-lable-item:focus + .form-lable-text {
+  color: var(--accent-text-color);
+}
+.form-lable-item:focus + .form-lable-text,
+.form-lable-item:not(:placeholder-shown) + .form-lable-text {
+  transform: translate(-35px, -32px);
+  color: currentColor;
+}
+
+.form-lable:nth-child(-n + 4) {
+  margin-bottom: 28px;
+}
+.form-lable:nth-child(5) {
+  margin-bottom: 20px;
 }
 .form-lable-text {
   line-height: 0.01em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 12px;
+
+  color: var(--primary-text-color);
+}
+
+.modal-for-position {
+  position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-lable-item {
-  display: block;
+  display: blockfl;
   width: 100%;
-  margin-top: 4px;
 
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 40px;
+}
+.form-lable-item:hover {
+  border: 1px solid var(--accent-text-color);
+}
+
+.form-lable-text {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
 }
 
 .form-lable-coment {
   display: block;
   width: 100%;
   height: 120px;
-  margin-top: 4px;
-  margin-bottom: 20px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -938,7 +993,6 @@ textarea {
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
 
   background: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -959,4 +1013,24 @@ textarea {
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: #188ce8;
+}
+.btn {
+  display: block;
+}
+.btn-item-test {
+  margin-bottom: 10px;
+}
+.btn-item-test:nth-child(-1 + 3) {
+  margin-bottom: 15px;
+}
+btn-item-test {
+  display: block;
+  outline: 1px solid red;
+  background-color: #2196f3;
+}
+.test-blok {
+  outline: 1px solid red;
+}
+.test-blok.test-blok:nth-child(-1n + 3) {
+  margin-bottom: 40px;
 }

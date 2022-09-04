@@ -35,7 +35,7 @@
               <a href="./portfolio.html" class="nav">Потрфоліо</a>
             </li>
             <li class="item">
-              <a href="" class="nav">Контакти</a>
+              <a href="./index-test.html" class="nav">Контакти</a>
             </li>
           </ul>
 
@@ -713,45 +713,67 @@
         </div>
         <!-- ==============FOOTER FORM======================== -->
         <div class="footer-form">
-          <b class="flex comin-title">Підпишись на розсилку</b>
-          <input type="email" class="footer-form-item" placeholder="E-mail" />
-          <a href="" class="flex link footer-form-link">Підписатися</a>
+          <p class="comin-title">Підпишись на розсилку</p>
+          <form>
+            <input type="email" class="footer-form-item" placeholder="E-mail" />
+            <button class="link footer-form-link" type="button">
+              Підписатися
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <!-- ====================Modal Window======================== -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <a class="modal-btn-bcg" data-modal-close href=""
-          ><svg class="modal-button">
-            <use href="./images/sprite.svg#icon-Vector"></use></svg
-        ></a>
+        <button class="modal-btn-bcg" type="button">
+          <svg class="modal-button">
+            <use href="./images/sprite.svg#icon-Vector"></use>
+          </svg>
+        </button>
 
         <div class="modal-form">
           <h2 class="modal-title">Залиште своЇ данні, ми вам передзвонимо</h2>
-          <div class="form-lable">
-            <label class="form-lable-text" for="name">Ім'я</label>
-            <input class="form-lable-item" type="email" name="mail" id="mail" />
-          </div>
-          <div class="form-lable">
-            <label class="form-lable-text" for="tel">Телефон</label>
-            <input
-              class="form-lable-item"
-              type="tel"
-              name="tel"
-              id="tel"
-              autocomplete="tel"
-            />
-          </div>
-          <div class="form-lable">
-            <label class="form-lable-text" for="mail">Пошта</label>
+          <div class="form-lable modal-for-position">
             <input
               class="form-lable-item"
               type="email"
               name="mail"
               id="mail"
+              placeholder=" "
+            />
+            <label class="form-lable-text" for="name">Ім'я</label>
+            <svg class="modal-icon-svg">
+              <use href="./images/sprite.svg#icon-modal"></use>
+            </svg>
+          </div>
+          <div class="form-lable modal-for-position">
+            <input
+              class="form-lable-item"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder=" "
+              autocomplete="tel"
+            />
+            <label class="form-lable-text" for="tel">Телефон</label>
+            <svg class="modal-icon-svg">
+              <use href="./images/sprite.svg#icon-modal-1"></use>
+            </svg>
+          </div>
+          <div class="form-lable modal-for-position">
+            <input
+              class="form-lable-item"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder=" "
               autocomplete="email"
             />
+            <label class="form-lable-text" for="mail">Пошта</label>
+            <svg class="modal-icon-svg">
+              <use href="./images/sprite.svg#icon-modal-2"></use>
+            </svg>
           </div>
           <div class="form-lable">
             <label class="form-lable-text" for="coment">Коментар</label>
