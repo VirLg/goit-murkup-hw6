@@ -28,13 +28,13 @@
           >
 
           <ul class="list link ul-nav flex">
-            <li class="item">
+            <li>
               <a href="./index.html" class="nav current">Студия</a>
             </li>
-            <li class="item">
+            <li>
               <a href="./portfolio.html" class="nav">Потрфоліо</a>
             </li>
-            <li class="item">
+            <li>
               <a href="./index-test.html" class="nav">Контакти</a>
             </li>
           </ul>
@@ -716,7 +716,7 @@
           <p class="comin-title">Підпишись на розсилку</p>
           <form>
             <input type="email" class="footer-form-item" placeholder="E-mail" />
-            <button class="link footer-form-link" type="button">
+            <button submit class="link footer-form-link" type="button">
               Підписатися
             </button>
           </form>
@@ -726,7 +726,7 @@
     <!-- ====================Modal Window======================== -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn-bcg" type="button">
+        <button data-modal-close class="modal-btn-bcg" type="button">
           <svg class="modal-button">
             <use href="./images/sprite.svg#icon-Vector"></use>
           </svg>
@@ -734,81 +734,100 @@
 
         <div class="modal-form">
           <h2 class="modal-title">Залиште своЇ данні, ми вам передзвонимо</h2>
-          <div class="form-lable modal-for-position">
-            <input
-              class="form-lable-item"
-              type="email"
-              name="mail"
-              id="mail"
-              placeholder=" "
-            />
-            <label class="form-lable-text" for="name">Ім'я</label>
-            <svg class="modal-icon-svg">
-              <use href="./images/sprite.svg#icon-modal"></use>
-            </svg>
-          </div>
-          <div class="form-lable modal-for-position">
-            <input
-              class="form-lable-item"
-              type="tel"
-              name="tel"
-              id="tel"
-              placeholder=" "
-              autocomplete="tel"
-            />
-            <label class="form-lable-text" for="tel">Телефон</label>
-            <svg class="modal-icon-svg">
-              <use href="./images/sprite.svg#icon-modal-1"></use>
-            </svg>
-          </div>
-          <div class="form-lable modal-for-position">
-            <input
-              class="form-lable-item"
-              type="email"
-              name="mail"
-              id="mail"
-              placeholder=" "
-              autocomplete="email"
-            />
-            <label class="form-lable-text" for="mail">Пошта</label>
-            <svg class="modal-icon-svg">
-              <use href="./images/sprite.svg#icon-modal-2"></use>
-            </svg>
-          </div>
-          <div class="form-lable for-lable-coment">
-            <textarea
-              class="form-lable-coment"
-              name="coment"
-              id="coment"
-              cols="30"
-              rows="10"
-              placeholder="Введіть текст"
-              autocomplete="off"
-            ></textarea>
-            <label class="form-lable-text-comment" for="coment">Коментар</label>
-          </div>
-          <div class="form-lable policy">
-            <input
-              class="checkbox"
-              type="checkbox"
-              name="policy"
-              value=""
-              id="policy"
-            />
-            <label class="policy-text" for="policy"
-              >Погоджуюсь з розсилкою та приймаю
-              <a class="policy-link" href="">Умови договору</a></label
-            >
-            <svg class="policy-svg">
-              <use href="./images/sprite.svg#icon-modal-3"></use>
-            </svg>
-          </div>
+          <form class="js-speaker-form">
+            <div class="form-lable modal-for-position">
+              <input
+                class="form-lable-item"
+                type="text"
+                name="user-name"
+                id="name"
+                placeholder=" "
+              />
+              <label class="form-lable-text" for="name">Ім'я</label>
+              <svg class="modal-icon-svg">
+                <use href="./images/sprite.svg#icon-modal"></use>
+              </svg>
+            </div>
+            <div class="form-lable modal-for-position">
+              <input
+                class="form-lable-item"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder=" "
+                autocomplete="tel"
+              />
+              <label class="form-lable-text" for="tel">Телефон</label>
+              <svg class="modal-icon-svg">
+                <use href="./images/sprite.svg#icon-modal-1"></use>
+              </svg>
+            </div>
+            <div class="form-lable modal-for-position">
+              <input
+                class="form-lable-item"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder=" "
+                autocomplete="email"
+              />
+              <label class="form-lable-text" for="mail">Пошта</label>
+              <svg class="modal-icon-svg">
+                <use href="./images/sprite.svg#icon-modal-2"></use>
+              </svg>
+            </div>
+            <div class="form-lable for-lable-coment">
+              <textarea
+                class="form-lable-coment"
+                name="coment"
+                id="coment"
+                cols="30"
+                rows="10"
+                placeholder="Введіть текст"
+                autocomplete="off"
+              ></textarea>
+              <label class="form-lable-text-comment" for="coment"
+                >Коментар</label
+              >
+            </div>
+            <div class="form-lable policy">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="policy"
+                value=""
+                id="policy"
+              />
+              <label class="policy-text" for="policy"
+                >Погоджуюсь з розсилкою та приймаю
+                <a class="policy-link" href="">Умови договору</a>
+              </label>
+              <svg class="policy-svg">
+                <use href="./images/sprite.svg#icon-modal-3"></use>
+              </svg>
+            </div>
 
-          <button class="modal-form-btn" type="submit">Відправити</button>
+            <button class="modal-form-btn" type="submit">Відправити</button>
+          </form>
         </div>
       </div>
     </div>
 
     <script src="./modal.js"></script>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
