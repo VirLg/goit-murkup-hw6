@@ -775,8 +775,7 @@
               <use href="./images/sprite.svg#icon-modal-2"></use>
             </svg>
           </div>
-          <div class="form-lable">
-            <label class="form-lable-text" for="coment">Коментар</label>
+          <div class="form-lable for-lable-coment">
             <textarea
               class="form-lable-coment"
               name="coment"
@@ -786,8 +785,9 @@
               placeholder="Введіть текст"
               autocomplete="off"
             ></textarea>
+            <label class="form-lable-text-comment" for="coment">Коментар</label>
           </div>
-          <div class="form-lable">
+          <div class="form-lable policy">
             <input
               class="checkbox"
               type="checkbox"
@@ -799,6 +799,9 @@
               >Погоджуюсь з розсилкою та приймаю
               <a class="policy-link" href="">Умови договору</a></label
             >
+            <svg class="policy-svg">
+              <use href="./images/sprite.svg#icon-modal-3"></use>
+            </svg>
           </div>
 
           <button class="modal-form-btn" type="submit">Відправити</button>
