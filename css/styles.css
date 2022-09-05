@@ -1045,7 +1045,11 @@ textarea {
 }
 
 .checkbox:checked ~ .policy-svg {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(25%);
+
   width: 16px;
   height: 15px;
   background-color: var(--accent-text-color);
