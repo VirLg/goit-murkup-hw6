@@ -715,7 +715,12 @@
         <div class="footer-form">
           <p class="comin-title">Підпишись на розсилку</p>
           <form>
-            <input type="email" class="footer-form-item" placeholder="E-mail" />
+            <input
+              type="email"
+              class="footer-form-item"
+              placeholder="E-mail"
+              required
+            />
             <button submit class="link footer-form-link" type="submit">
               Підписатися
             </button>
@@ -742,6 +747,7 @@
                 name="user-name"
                 id="name"
                 placeholder=" "
+                required
               />
               <label class="form-lable-text" for="name">Ім'я</label>
               <svg class="modal-icon-svg">
@@ -756,6 +762,7 @@
                 id="tel"
                 placeholder=" "
                 autocomplete="tel"
+                required
               />
               <label class="form-lable-text" for="tel">Телефон</label>
               <svg class="modal-icon-svg">
@@ -814,7 +821,7 @@
     </div>
 
     <script src="./modal.js"></script>
-    <script>
+    <!-- <script>
       (() => {
         document
           .querySelector(".js-speaker-form")
@@ -828,6 +835,6 @@
             e.currentTarget.reset();
           });
       })();
-    </script>
+    </script> -->
   </body>
 </html>
