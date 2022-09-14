@@ -1,0 +1,118 @@
+.nav {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current {
+    color: var(--accent-text-color);
+    position: relative;
+}
+
+/* .list a:hover,
+.list a:focus {
+  color: var(--accent-text-color);
+} */
+
+
+
+.ul-nav {
+    margin-left: 90px;
+    align-items: baseline;
+}
+
+.ul-nav li+li {
+    margin-left: 50px;
+}
+
+.ul-nav .mailto {
+    width: 34px;
+    height: 34px;
+    background-color: tomato;
+}
+
+.nav-aut a {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-nav-mail:hover,
+.link-nav-mail:focus {
+    color: var(--accent-text-color);
+}
+
+.link-nav-tel:hover,
+.link-nav-tel:focus {
+    color: var(--accent-text-color);
+}
+
+.link-nav-tel,
+.link-nav-mail {
+    flex-direction: row-reverse;
+}
+
+.nav-aut li+li {
+    margin-left: 50px;
+}
+
+.nav-aut {
+    margin-left: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin: 0;
+    color: var(--title-text-color);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.clients {
+    background-color: #f5f4fa14;
+}
+
+.mailto-fone,
+.mailto-post {
+    align-items: center;
+    display: inline-flex;
+}
+
+.mailto-item {
+    width: 32px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.mailto-tel {
+    width: 20px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav.current::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    bottom: 0;
+    border-radius: 2px;
+}
