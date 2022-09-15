@@ -13,13 +13,16 @@
     cursor: pointer;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button:focus,
-.button:hover {
+
+&:focus,
+&:hover {
     /* color: var(--title-text-color); */
     background-color: #c4c4c4;
 }
+
+}
+
 
 .button-seconary {
     padding: 6px 22px;
@@ -35,12 +38,13 @@
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-seconary:focus,
-.button-seconary:hover {
+
+&:focus,
+&:hover {
     color: var(--primary-white-color);
     background-color: var(--accent-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 }
