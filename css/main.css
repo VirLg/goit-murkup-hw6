@@ -141,23 +141,12 @@ img {
   margin-left: 90px;
   align-items: baseline;
 }
-
 .ul-nav li + li {
   margin-left: 50px;
 }
-
 .ul-nav .mailto {
   width: 34px;
   height: 34px;
-  background-color: tomato;
-}
-
-.nav-aut a {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-nav-mail:hover,
@@ -175,12 +164,18 @@ img {
   flex-direction: row-reverse;
 }
 
+.nav-aut {
+  margin-left: auto;
+}
 .nav-aut li + li {
   margin-left: 50px;
 }
-
-.nav-aut {
-  margin-left: auto;
+.nav-aut a {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-title {
@@ -831,15 +826,13 @@ img {
   justify-content: center;
   cursor: pointer;
 }
+.modal-btn-bcg:hover, .modal-btn-bcg:focus {
+  fill: var(--accent-text-color);
+}
 
 .modal-button {
   width: 11px;
   height: 11px;
-}
-
-.modal-btn-bcg:hover,
-.modal-btn-bcg:focus {
-  fill: var(--accent-text-color);
 }
 
 textarea {
@@ -940,7 +933,6 @@ textarea {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 40px;
 }
-
 .form-lable-item:hover {
   border: 1px solid var(--accent-text-color);
 }
@@ -964,6 +956,25 @@ textarea {
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-lable-coment:hover, .form-lable-coment:focus {
+  border-radius: 4px;
+  border-color: var(--accent-text-color);
+}
+.form-lable-coment::-moz-placeholder {
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-lable-coment:-ms-input-placeholder {
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-lable-coment::placeholder {
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 
 .form-lable:hover .form-lable-text-comment,
 .form-lable:focus .form-lable-text-comment {
@@ -982,33 +993,9 @@ textarea {
   fill: var(--accent-text-color);
 }
 
-.form-lable-coment:hover,
-.form-lable-coment:focus {
-  border-radius: 4px;
-  border-color: var(--accent-text-color);
-}
-
 .for-lable-coment {
   display: flex;
   flex-direction: column-reverse;
-}
-
-.form-lable-coment::-moz-placeholder {
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-lable-coment:-ms-input-placeholder {
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-lable-coment::placeholder {
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .policy {
@@ -1086,9 +1073,7 @@ textarea {
   color: var(--primary-white-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-form-btn:hover,
-.modal-form-btn:focus {
+.modal-form-btn:hover, .modal-form-btn:focus {
   background-color: #188ce8;
 }
 

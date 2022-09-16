@@ -26,25 +26,17 @@
 .ul-nav {
     margin-left: 90px;
     align-items: baseline;
+
+    & li+li {
+        margin-left: 50px;
+    }
+    & .mailto {
+        width: 34px;
+        height: 34px;
+        
+  }
 }
 
-.ul-nav li+li {
-    margin-left: 50px;
-}
-
-.ul-nav .mailto {
-    width: 34px;
-    height: 34px;
-    background-color: tomato;
-}
-
-.nav-aut a {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .link-nav-mail:hover,
 .link-nav-mail:focus {
@@ -61,12 +53,22 @@
     flex-direction: row-reverse;
 }
 
-.nav-aut li+li {
-    margin-left: 50px;
-}
+
 
 .nav-aut {
     margin-left: auto;
+
+    & li+li {
+        margin-left: 50px;
+}
+
+    & a {
+        color: var(--primary-text-color);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .section-title {
