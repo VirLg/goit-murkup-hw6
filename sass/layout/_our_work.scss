@@ -1,9 +1,9 @@
-.item-our-work:not(:last-child) {
-    margin-right: 30px;
-}
 
 .item-our-work {
     position: relative;
+&:not(:last-child) {
+    margin-right: 30px;
+}
 }
 
 .work__bg {
