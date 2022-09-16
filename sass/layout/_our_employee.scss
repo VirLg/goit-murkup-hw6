@@ -33,6 +33,9 @@
 & img:focus {
     background-color: var(--accent-text-color);
 }
+.employee-list {
+    column-gap: 30px;
+}
 
 
 
@@ -43,9 +46,6 @@
     padding-bottom: 30px;
 }
 
-.employee-list {
-    column-gap: 30px;
-}
 
 
 
