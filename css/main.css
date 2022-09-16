@@ -424,14 +424,14 @@ img {
   background-position: center;
 }
 
-.item-our-work {
+.our-work__item {
   position: relative;
 }
-.item-our-work:not(:last-child) {
+.our-work__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work__bg {
+.our-work__overlay {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -443,7 +443,7 @@ img {
   padding-bottom: 27px;
 }
 
-.work__text {
+.our-work__overlay-text {
   text-transform: uppercase;
   text-align: center;
   color: var(--primary-white-color);
@@ -460,7 +460,7 @@ img {
   color: #ffffff;
 }
 
-.employee {
+.employee-item__title {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
@@ -470,7 +470,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.employee-text {
+.employee-item__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.18;
@@ -478,19 +478,22 @@ img {
   margin-bottom: 16px;
 }
 
-.item-employee {
+.employee-item {
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 
-.employee-network {
+.employee-network,
+.employee__social {
   justify-content: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
-.employee-network img:hover, .employee-network img:focus {
+.employee-network img:hover, .employee-network img:focus,
+.employee__social img:hover,
+.employee__social img:focus {
   background-color: var(--accent-text-color);
 }
 
@@ -499,7 +502,7 @@ img {
        column-gap: 30px;
 }
 
-.test-card {
+.employee-item__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }

@@ -1,12 +1,12 @@
 
-.item-our-work {
+.our-work__item {
     position: relative;
 &:not(:last-child) {
     margin-right: 30px;
 }
 }
 
-.work__bg {
+.our-work__overlay {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -20,7 +20,7 @@
     padding-bottom: 27px;
 }
 
-.work__text {
+.our-work__overlay-text {
     text-transform: uppercase;
     text-align: center;
     color: var(--primary-white-color);

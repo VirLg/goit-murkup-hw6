@@ -1,4 +1,4 @@
-.employee {
+.employee-item__title{
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -9,7 +9,7 @@
     letter-spacing: 0.03em;
 }
 
-.employee-text {
+.employee-item__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.18;
@@ -17,7 +17,7 @@
     margin-bottom: 16px;
 }
 
-.item-employee {
+.employee-item {
     background: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -25,7 +25,8 @@
     text-align: center;
 }
 
-.employee-network {
+.employee-network,
+.employee__social {
     justify-content: center;
     column-gap: 10px;
 
@@ -39,7 +40,7 @@
 }
 
 
-.test-card {
+.employee-item__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
